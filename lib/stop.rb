@@ -1,11 +1,10 @@
 def spinWords(string)
-  result = []
-  string.split(" ").each do |word|
+  string.split(" ").map do |word|
     if word.length >= 5
-      result << word.reverse
+      word.reverse
     else
-      result << word
+      word
     end
   end
-  result.join(" ")
+  string.join(" ")
 end
